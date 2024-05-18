@@ -1,0 +1,28 @@
+GET http://localhost:5000/user
+
+
+###
+GET http://localhost:5000/user/2
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name": "Fadhel",
+    "email": "padel123@gmail.com",
+    "nomor_hp": "081122334455"
+}
+
+###
+PATCH http://localhost:5000/user/1
+Content-Type: application/json
+
+{
+    "name": "alfiah Jamet",
+    "email": "Alfiah@gmail.com",
+    "nomor_hp": "081234567890"
+}
+
+###
+DELETE http://localhost:5000/user/2
